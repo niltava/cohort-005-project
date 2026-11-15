@@ -1,35 +1,89 @@
 # Cadence
 
-Cadence sells video courses to learners. This glossary covers the language around getting money back after a purchase.
+Cadence sells video courses to learners, singly or as seats for a team. This glossary covers the language around buying courses, access to them, and getting money back after a purchase.
 
 ## Language
+
+### People
+
+**Platform Admin**:
+A Cadence staff member who runs the platform, including deciding Refund Requests.
+_Avoid_: Admin, the team, staff
+
+**Team Admin**:
+A person who manages a Team's licence and seats. A Team Admin cannot decide Refund Requests.
+_Avoid_: Admin, team owner
+
+**Purchaser**:
+The person who paid for a Purchase. A Purchaser is not necessarily a Learner.
+_Avoid_: Buyer, customer, learner (for the payer)
+
+**Learner**:
+A person with an Enrollment in a course.
+_Avoid_: Student, user (for the person taking a course)
+
+### Buying and access
+
+**Purchase**:
+One payment by a Purchaser for one course, either for themselves or as a Team Purchase.
+_Avoid_: Order, transaction
+
+**Enrollment**:
+A Learner's place in a course, which gives them access to its content.
+_Avoid_: Subscription, access grant
+
+**Revoked Enrollment**:
+An Enrollment that no longer gives access because the Purchase behind it was refunded. The Learner's progress is kept, and buying again restores it.
+_Avoid_: Cancelled enrollment, unenrolled, removed
+
+**Team**:
+A group whose Seats are bought by its Team Admin.
+
+**Team Purchase**:
+A Purchase that buys several Seats for a Team. The Purchaser does not get an Enrollment from it.
+_Avoid_: Team licence, bulk purchase
+
+**Seat**:
+One place in a Team Purchase that one Learner can take.
+_Avoid_: Coupon, licence
+
+**Claimed Seat**:
+A Seat a Learner has taken, which gave them an Enrollment.
+_Avoid_: Redeemed coupon, used seat
+
+**Unclaimed Seat**:
+A Seat nobody has taken yet.
+
+**Void Seat**:
+A Seat on a Team Purchase whose Refund Request was approved. It can never be claimed.
+_Avoid_: Cancelled seat, expired seat
 
 ### Refunds
 
 **Refund Request**:
-A learner's ask, with their reason, to get back what they paid for a purchase. The team approves or declines it. One purchase can have several Refund Requests over time, but only one can be undecided at once.
+A Purchaser's ask, with their reason, to get back what they paid for one Purchase. A Platform Admin approves or declines it, and the decision is final. One Purchase can have several Refund Requests over time, but only one can be undecided at once. A Team Purchase can have one only while all its Seats are unclaimed.
 _Avoid_: Refund (for the ask itself), Cancellation, Reversal, Chargeback
 
 **Open Refund Request**:
-A Refund Request the team hasn't decided yet.
+A Refund Request no Platform Admin has decided yet.
 _Avoid_: Pending, Requested, Awaiting review
 
 **Approved Refund Request**:
-A Refund Request the team has accepted. Approving it is what leads to a Refund.
+A Refund Request a Platform Admin has accepted. Approving it is what leads to a Refund, and at that moment the Enrollment it paid for is revoked, or its Seats become void.
 
 **Declined Refund Request**:
-A Refund Request the team has turned down. It has no Refund, and the learner may raise a new Refund Request.
+A Refund Request a Platform Admin has turned down. It has no Refund, and the Purchaser may raise a new Refund Request.
 
 **Refund**:
-The money returned to a learner after their Refund Request is approved. It is always the full amount they paid. A declined Refund Request has no Refund.
+The money returned to a Purchaser after their Refund Request is approved. It is always the full amount they paid. A declined Refund Request has no Refund.
 _Avoid_: Reversal, Chargeback, Cancellation
 
 **Pending Refund**:
-A Refund the team has approved where the money hasn't been confirmed as sent yet.
+A Refund whose Refund Request is approved but where the money hasn't been confirmed as sent yet.
 _Avoid_: Pending (for a Refund Request awaiting review)
 
 **Issued Refund**:
-A Refund where the money has been confirmed as sent back to the learner.
+A Refund where the money has been confirmed as sent back to the Purchaser.
 _Avoid_: Completed, Paid out
 
 **Failed Refund**:
