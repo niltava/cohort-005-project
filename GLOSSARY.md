@@ -25,7 +25,7 @@ _Avoid_: Student, user (for the person taking a course)
 ### Buying and access
 
 **Purchase**:
-One payment by a Purchaser for one course, either for themselves or as a Team Purchase.
+One payment by a Purchaser for one course, either for themselves or as a Team License.
 _Avoid_: Order, transaction
 
 **Enrollment**:
@@ -39,12 +39,12 @@ _Avoid_: Cancelled enrollment, unenrolled, removed
 **Team**:
 A group whose Seats are bought by its Team Admin.
 
-**Team Purchase**:
+**Team License**:
 A Purchase that buys several Seats for a Team. The Purchaser does not get an Enrollment from it.
-_Avoid_: Team licence, bulk purchase
+_Avoid_: Team purchase, team licence, bulk purchase
 
 **Seat**:
-One place in a Team Purchase that one Learner can take.
+One place in a Team License that one Learner can take.
 _Avoid_: Coupon, licence
 
 **Claimed Seat**:
@@ -54,14 +54,10 @@ _Avoid_: Redeemed coupon, used seat
 **Unclaimed Seat**:
 A Seat nobody has taken yet.
 
-**Void Seat**:
-A Seat on a Team Purchase whose Refund Request was approved. It can never be claimed.
-_Avoid_: Cancelled seat, expired seat
-
 ### Refunds
 
 **Refund Request**:
-A Purchaser's ask, with their reason, to get back what they paid for one Purchase. A Platform Admin approves or declines it, and the decision is final. One Purchase can have several Refund Requests over time, but only one can be undecided at once. A Team Purchase can have one only while all its Seats are unclaimed.
+A Purchaser's ask, with their reason, to get back what they paid for one Purchase. A Platform Admin approves or declines it, and the decision is final. One Purchase can have several Refund Requests over time, but only one can be undecided at once. A Team License can have one only while all its Seats are unclaimed.
 _Avoid_: Refund (for the ask itself), Cancellation, Reversal, Chargeback
 
 **Open Refund Request**:
@@ -69,7 +65,7 @@ A Refund Request no Platform Admin has decided yet.
 _Avoid_: Pending, Requested, Awaiting review
 
 **Approved Refund Request**:
-A Refund Request a Platform Admin has accepted. Approving it is what leads to a Refund, and at that moment the Enrollment it paid for is revoked, or its Seats become void.
+A Refund Request a Platform Admin has accepted. Approving it is what leads to a Refund, and at that moment the Enrollment it paid for is revoked, or, for a Team License, none of its Seats can be claimed any more.
 
 **Declined Refund Request**:
 A Refund Request a Platform Admin has turned down. It has no Refund, and the Purchaser may raise a new Refund Request.
